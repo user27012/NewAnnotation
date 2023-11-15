@@ -7,6 +7,7 @@ import java.lang.reflect.Method;
 class Calculate {
 
     @Retention(RetentionPolicy.RUNTIME)
+    @Documented
     public @interface calc {
         int first() default 4;
         int second() default 12;
